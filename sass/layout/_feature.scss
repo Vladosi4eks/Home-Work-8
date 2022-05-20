@@ -8,7 +8,9 @@
         line-height: 1.15;
         text-transform: uppercase;
         color: var(--black-color);
-        text-align: center;
+        @include mq(mob-only) {
+            text-align: center;
+        }
     }
     &__text {
         font-size: 14px;
