@@ -1486,6 +1486,7 @@ textarea::placeholder {
 
 .comand {
   background: #F5F4FA;
+  min-width: 480px;
 }
 
 .comand-list {
