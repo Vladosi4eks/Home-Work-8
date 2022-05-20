@@ -1,0 +1,19 @@
+.section {
+    padding: 60px 0px;
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--black-color);
+        @include mq(desk) {
+            font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+}

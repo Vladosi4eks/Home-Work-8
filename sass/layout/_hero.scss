@@ -1,0 +1,45 @@
+.section-hero {
+    padding: 118px 0px;
+    background-color: #2f303a;
+    background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-480@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include mq(retina) {
+        background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-480@2x.jpg);
+    }
+    @include mq(tab) {
+        background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-768@1x.jpg);
+        background-size: cover;
+        @include mq(retina) {
+            background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-768@2x.jpg);
+        }
+    }
+    @include mq(desk) {
+        background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-1200@1x.jpg);
+        background-size: 1600px;
+        padding: 200px 0;
+        @include mq(retina) {
+            background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-1200@2x.jpg);
+        }
+    }
+    &__title {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whtie-color);
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 30px;
+        width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+        }
+    }
+}
