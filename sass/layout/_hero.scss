@@ -5,6 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 480px;
     width: 100%;
     @include mq(retina) {
         background-image: linear-gradient( var(--backgroup-hero), var(--backgroup-hero)), url(../images/hero-480@2x.jpg);
