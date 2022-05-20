@@ -96,6 +96,11 @@ textarea {
         @include mq(desk) {
             margin-bottom: 10px;
         }
+        @include mq(mob-only) {
+            &:focus-within .modal-form__span {
+                color: var(--blue-color);
+            }
+        }
     }
     &__comment {
         width: 370px;

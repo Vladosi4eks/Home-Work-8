@@ -336,6 +336,12 @@ textarea {
   }
 }
 
+@media (max-width: 767.98px) {
+  .modal-form__label:focus-within .modal-form__span {
+    color: var(--blue-color);
+  }
+}
+
 .modal-form__comment {
   width: 370px;
   height: 120px;
